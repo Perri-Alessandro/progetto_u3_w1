@@ -17,10 +17,11 @@ function Welcome() {
       {showAlert && (
         <Alert variant="success" onClose={chiudiAlert} dismissible>
           <Alert.Heading>Hey, nice to see you</Alert.Heading>
-          <p>Welcome in my new restaurant page</p>
+          <p>Welcome in my new Netflix page</p>
           <hr />
           <p className="mb-0">
-            Click on the card image to read or add a comments
+            Click on the card image to read or add a comments (NOT IN THIS PAGE
+            :)
           </p>
           <div onClick={pageClick}>
             {/* Tuo contenuto della pagina */}

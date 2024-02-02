@@ -45,7 +45,7 @@ const MyFooter = () => {
       >
         <div className="col">
           <Row>
-            <Col className="mb-2">
+            <Col>
               <FaFacebook className=" footer-icon me-2" />
               <FaInstagram className="footer-icon me-2" />
               <FaTwitter className="footer-icon me-2" />

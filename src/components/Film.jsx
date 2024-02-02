@@ -30,6 +30,7 @@ class Film extends Component {
       .catch((err) => {
         console.log("ERRORE NEL CONTATTARE IL SERVER", err);
         this.setState({ loading: false });
+        alert("ERRORE DI COMUNICAZIONE CON IL SERVER");
       });
   };
   componentDidMount() {
@@ -45,7 +46,7 @@ class Film extends Component {
         <Row className="text-white g-5 my-2 mx-3">
           <p className="text-start fs-3">{this.props.h1}</p>
           {movies.slice(0, 6).map((movie) => (
-            <Col key={movie.imdbID} sm={6} md={4} lg={3} xl={2}>
+            <Col key={movie.imdbID} sm={6} md={4} xl={2}>
               <Card className="rounded-5" style={{ height: "40vh" }}>
                 <Card.Img
                   className="rounded-top-5"

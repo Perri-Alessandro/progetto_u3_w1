@@ -3,7 +3,7 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { FaSearch, FaBell, FaUserCircle } from "react-icons/fa";
 
 const MyNav = () => (
-  <Navbar expand="lg" bg="dark" className="container-fluid">
+  <Navbar expand="lg" className="container-fluid">
     <Container className="row">
       <Navbar.Brand href="#" className="col me-0">
         <img
@@ -12,7 +12,10 @@ const MyNav = () => (
           alt="Logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarSupportedContent" className="col" />
+      <Navbar.Toggle
+        aria-controls="navbarSupportedContent"
+        className="col bg-white"
+      />
       <Navbar.Collapse id="navbarSupportedContent" className="col">
         <Nav className="me-auto  mb-2 mb-lg-0">
           <Nav.Link href="#" className="fw-bold text-secondary px-0">
@@ -31,13 +34,13 @@ const MyNav = () => (
             My List
           </Nav.Link>
         </Nav>
-        <div className="row align-items-center justify-content-end text-white ">
-          <FaSearch className="icons col" />
-          <div id="kids" className="fw-bold col">
+        <div className="d-flex align-items-center justify-content-end text-white ">
+          <FaSearch className="icons " />
+          <div id="kids" className="fw-bold ">
             KIDS
           </div>
-          <FaBell className="icons col" />
-          <FaUserCircle className="icons col" />
+          <FaBell className="icons" />
+          <FaUserCircle className="icons " />
         </div>
       </Navbar.Collapse>
     </Container>
