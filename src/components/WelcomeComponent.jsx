@@ -22,12 +22,12 @@ function Welcome() {
           <p className="mb-0">
             Click on the card image to read or add a comments
           </p>
+          <div onClick={pageClick}>
+            {/* Tuo contenuto della pagina */}
+            <p className=" text-danger fs-5">Click here to hide the alert</p>
+          </div>
         </Alert>
       )}
-      <div onClick={pageClick}>
-        {/* Tuo contenuto della pagina */}
-        <p className=" text-danger fs-5">Click here to hide the alert</p>
-      </div>
     </>
   );
 }
