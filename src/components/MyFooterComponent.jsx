@@ -53,7 +53,7 @@ const MyFooter = () => {
             </Col>
           </Row>
 
-          <div className="row flex-column ">
+          <div className="row flex-column">
             <div className="col mt-2 ">Audio and Subtitles</div>
             <div className="col">Media Center</div>
             <div className="col">Privacy</div>
