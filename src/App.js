@@ -13,7 +13,9 @@ function App() {
       </header>
       <main className="bg-dark">
         <Welcome></Welcome>
-        <Film />
+        <Film endpoint="StarWars" />
+        <Film endpoint="The Lord Of The Rings" />
+        <Film endpoint="Harry Potter" />
       </main>
       <MyFooter />
     </div>
